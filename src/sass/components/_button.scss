@@ -1,0 +1,28 @@
+@mixin btn( $bg-color: #f8f8f8 ) {
+    display: inline-block;
+    width: $btn-base-width;
+    background-color: $bg-color;
+    text-decoration: none;
+    cursor: pointer;
+    padding: $base-padding * 2;
+    border-radius: $base-border-radius;
+    font-size: $base-font-size-md;
+    font-weight: $btn-font-weight;
+}
+
+.btn {
+    @include btn;
+}
+
+.btn-bordered {
+	border: 1px solid map-get( $colors, 'lite-gray' );
+}
+
+@each $key, $val in $colors {
+    .btn-#{$key} {
+        @include btn( $val );
+        &:hover {
+            background-color: lighten( $val, 5 );
+        }
+    }
+}

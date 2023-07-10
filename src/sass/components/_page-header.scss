@@ -1,0 +1,62 @@
+.page-header {
+    min-height: 660px;
+    background-color: $secondary;
+    padding-top: $base-padding * 5;
+    font-size: $base-font-size-md;
+    line-height: $base-line-height-xl;
+    color: map-get( $colors, 'secondary-text' );
+    margin-bottom: 400px;
+
+    @include md {
+        margin-bottom: 300px;
+    }
+
+    .page-title {
+        position: relative;
+        font-size: $base-font-size-xxl;
+        font-weight: 400;
+        color: map-get( $colors, 'primary-text' );
+
+        sup {
+            position: absolute;
+            display: inline-block;
+            top: -15px;
+            padding: 12px 7px;
+            background-color: map-get( $colors, 'gray' );
+            border-radius: $base-border-radius * 4;
+            font-size: $base-font-size-xs;
+            line-height: 0;
+            color: #fff;
+            z-index: 1;
+        }
+    }
+
+    .video-card-wrapper {
+        position: absolute;
+        margin-bottom: -50%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        .play-btn {
+            position: absolute;
+            top: calc( 50% - 87px );
+            left: calc( 50% - 87px );
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+}
+
+@include lg {
+    .page-header-buttons a {
+        &:first-child {
+            margin-right: $base-margin * 2;
+        }
+
+        &:last-child {
+            margin-left: $base-margin * 2;
+        }
+    }
+}

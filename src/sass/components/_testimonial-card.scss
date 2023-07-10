@@ -1,0 +1,25 @@
+.page-testimonial-cards {
+    .testimonial-card {
+        background-color: map-get( $colors, 'white' );
+        border: 1px solid map-get( $colors, 'lite-gray' );
+        border-radius: $base-border-radius * 2;
+        .card-body {
+            font-family: inherit;
+            font-size: $base-font-size;
+            color: map-get( $colors, 'secondary-text' );
+            line-height: $base-line-height;
+            margin-bottom: $base-margin * 1.5;
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+
+            .author {
+                font-family: inherit;
+                font-size: $base-font-size-xs;
+                color: map-get( $colors, 'hint-text' );
+            }
+        }
+    }
+
+}

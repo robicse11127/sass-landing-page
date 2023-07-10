@@ -1,0 +1,19 @@
+// Partials.
+@import './sass/partials/variables';
+@import './sass/partials/base';
+@import './sass/partials/breakpoints';
+@import './sass/partials/grids';
+@import './sass/partials/typography';
+
+// utilities.
+@import './sass/partials/utilities';
+
+// Components.
+@import './sass/components/page-header';
+@import './sass/components/popup-modal';
+@import './sass/components/button';
+@import './sass/components/icon-cards';
+@import './sass/components/testimonial-card';
+
+// Pages.
+@import './sass/pages/index.scss';
