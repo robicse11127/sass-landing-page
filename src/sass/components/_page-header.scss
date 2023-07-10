@@ -21,7 +21,7 @@
             position: absolute;
             display: inline-block;
             top: -15px;
-            padding: 12px 7px;
+            padding: 12px;
             background-color: map-get( $colors, 'gray' );
             border-radius: $base-border-radius * 4;
             font-size: $base-font-size-xs;
